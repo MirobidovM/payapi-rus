@@ -1,0 +1,57 @@
+.ready {
+  margin-bottom: 96px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @include h3-large-text;
+  }
+
+  &__form {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .ready {
+    margin-bottom: 100px;
+  }
+
+  .ready__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ready__title {
+    margin-bottom: 40px;
+  }
+
+  .ready__form-email {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .ready {
+    margin-bottom: 120px;
+  }
+
+  .ready__title {
+    margin-bottom: 32px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+  }
+
+  .ready__form-email {
+    margin-bottom: 16px;
+  }
+}

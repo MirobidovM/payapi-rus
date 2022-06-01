@@ -1,0 +1,93 @@
+@mixin margin--auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin opacity-hover {
+  opacity: 0.7;
+}
+
+@mixin opacity-active {
+  opacity: 0.4;
+}
+
+// FONT Size
+@mixin h2-large-text {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: $dark-blue;
+}
+
+@mixin h2-small-text {
+  font-family: "DM Serif Display";
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: $dark-blue;
+}
+
+@mixin h3-large-text {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: $dark-blue;
+}
+
+@mixin h3-small-text {
+  font-family: "DM Serif Display";
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: $dark-blue;
+}
+
+@mixin h4-large-text {
+  font-family: "DM Serif Display";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.184615px;
+  color: $dark-blue;
+}
+
+@mixin h4-small-text {
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.138462px;
+  color: $dark-blue;
+}
+
+@mixin header-footer-link {
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: $dark-blue;
+  opacity: 0.7;
+}
+
+@mixin defolt-text {
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #fbfcfe;
+  opacity: 0.7;
+}
+
+@mixin defolt-small-text {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: $light-blue;
+}

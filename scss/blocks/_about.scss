@@ -1,0 +1,106 @@
+.about {
+  margin-bottom: 150px;
+  background-color: $black-gray;
+  background-image: url(../img/about-bg.png);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 447px) top;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 445px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  &__title {
+    @include h3-large-text;
+    color: $white-gray;
+    margin-bottom: 24px;
+  }
+  &__text {
+    @include defolt-text;
+    margin-bottom: 32px;
+  }
+  &__link {
+    @include header-footer-link;
+    text-align: center;
+    opacity: 1;
+    padding: 16px 32px 14px 32px;
+    color: $white-gray;
+    border: 1px solid #fbfcfe;
+    box-sizing: border-box;
+    border-radius: 24px;
+    transition: 0.3s ease;
+  }
+
+  &__link:hover {
+    @include opacity-hover;
+  }
+
+  &__link:active {
+    background-color: #fff;
+    color: $black-gray;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .about {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    margin-bottom: 100px;
+    background-image: url(../img/tablet-images/about-bg-t.png);
+    background-repeat: no-repeat;
+    background-position: right calc(50%) top;
+  }
+
+  .about__container {
+    flex-direction: column-reverse;
+  }
+
+  .about__content {
+    max-width: 457px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    background-position: right calc(50%) top -30px;
+  }
+
+  .about__content {
+    max-width: 327px;
+  }
+
+  .about__title {
+    margin-bottom: 16px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+  }
+
+  .about__text {
+    width: 328px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}

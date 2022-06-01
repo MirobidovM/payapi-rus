@@ -1,0 +1,83 @@
+.form {
+  margin-bottom: 16px;
+  max-width: 445px;
+  position: relative;
+
+  &__email {
+    background-color: $white-gray;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    padding: 18px 190px 15px 27px;
+    outline: none;
+    border: none;
+  }
+
+  &__email::placeholder {
+    @include header-footer-link;
+    opacity: 0.5;
+  }
+
+  &__btn {
+    outline: none;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    top: 1.5px;
+    right: 0;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+
+  &__btn:hover {
+    opacity: 0.9;
+  }
+
+  &__btn:active {
+    opacity: 1;
+    background-color: $light-pink;
+  }
+}
+
+input {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1140px) {
+  .form__email {
+    margin-left: 65px;
+  }
+
+  .form__btn {
+    position: absolute;
+    right: -70px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .form__email {
+    width: 327px;
+    margin-left: 0;
+    padding: 16px 158px 14px 27px;
+    margin-bottom: 88px;
+  }
+
+  .form__btn {
+    display: block;
+    width: 327px;
+    top: 60px;
+    left: auto;
+    right: auto;
+    padding: 16px 46px 14px 50px;
+  }
+}

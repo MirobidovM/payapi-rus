@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+}
+.socials__item {
+  margin-left: 24px;
+}
+
+.socials__item:first-child {
+  margin-left: 0;
+}
+
+.socials__link {
+  transition: 0.3s ease;
+}
+
+.socials__link:hover {
+  @include opacity-hover;
+}
+
+.socials__link:active path {
+  fill: $light-pink !important;
+  opacity: 1;
+}

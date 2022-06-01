@@ -1,0 +1,11 @@
+.logo {
+  transition: 0.3s ease;
+
+  &:hover {
+    @include opacity-hover;
+  }
+
+  &:active {
+    @include opacity-active;
+  }
+}
